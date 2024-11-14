@@ -25,7 +25,10 @@ public class GradeBook {
             System.out.println();
             switch(choice) {
                 case "1": // TODO: write a loop that, for each student prints 
-                          //       lname, fname: grade 
+                          //       lname, fname: grade
+                          for(Student student: students) {
+                            System.out.printf("%s, %s: %d", student.getLastName(), student.getFirstName() , student.getGrade());
+                          }
                     continue;
                 case "2":
                     System.out.println("Goodbye!");
@@ -36,3 +39,4 @@ public class GradeBook {
         }
     }
 }
+
